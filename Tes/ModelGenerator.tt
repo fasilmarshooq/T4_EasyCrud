@@ -1,0 +1,16 @@
+﻿<#@ assembly name="D:\Personelprojects\VOC\R&D\Bridge\Bridge.ModelTools\bin\Debug\netstandard2.0\Bridge.ModelTools.dll" #>
+
+<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ output extension=".log" #> 
+<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #> 
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Runtime" #>
+<#@ assembly name="netstandard" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating"#>
+
+
+
+<#@ import namespace="Bridge.ModelTools"#>
+<#
+ TemplateTransformHelper.Transform( this.Host.ResolvePath(""));
+#>

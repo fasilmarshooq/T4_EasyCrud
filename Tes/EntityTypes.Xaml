@@ -1,0 +1,28 @@
+﻿<EntityTypes xmlns="clr-namespace:Bridge.ModelTools;assembly=Bridge.ModelTools">
+    <EntityTypes.Entities>
+        <Entity Name="Product" Description="test product">
+            <Entity.Attributes>
+            <Attribute Name="Name" Type="string"/>
+            <Attribute Name="Price" Type="int"/>
+        </Entity.Attributes>
+    </Entity>
+        <Entity Name="ProductDetail" ParentEntity="Product" RelationShip="OneToMany" >
+            <Entity.Attributes>
+                <Attribute Name="Type" Type="string"/>
+                <Attribute Name="MakeYear" Type="int"/>
+            </Entity.Attributes>
+        </Entity>
+        <Entity Name="Customer" Description="Customer">
+        <Entity.Attributes>
+            <Attribute Name="Name" Type="string"/>
+            <Attribute Name="Type" Type="string"/>
+        </Entity.Attributes>
+    </Entity>
+        <Entity Name="TestXaml" Description="Test">
+            <Entity.Attributes>
+                <Attribute Name="Test" Type="long"/>
+                <Attribute Name="g1" Type="long"/>
+            </Entity.Attributes>
+        </Entity>
+    </EntityTypes.Entities>
+</EntityTypes>
